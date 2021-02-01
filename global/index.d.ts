@@ -106,7 +106,7 @@ declare namespace browser.bookmarks {
 
   function update(
     id: string,
-    changes: { title?: string; url?: string },
+    changes: { title: string; url?: string } | { url: string; title?: string },
   ): Promise<BookmarkTreeNode>;
 
   const onCreated: EvListener<(id: string, bookmark: BookmarkTreeNode) => void>;
