@@ -1767,6 +1767,21 @@ declare namespace browser.tabs {
   function toggleReaderMode(tabId?: number): Promise<void>;
 
   function update(
+    updateProperties: {
+      active?: boolean;
+      // unsupported: autoDiscardable?: boolean,
+      // unsupported: highlighted?: boolean,
+      // unsupported: hidden?: boolean;
+      loadReplace?: boolean;
+      muted?: boolean;
+      openerTabId?: number;
+      pinned?: boolean;
+      // deprecated: selected?: boolean,
+      url?: string;
+    },
+  ): Promise<Tab>;
+
+  function update(
     tabId: number | undefined,
     updateProperties: {
       active?: boolean;
