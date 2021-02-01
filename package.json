@@ -1,18 +1,18 @@
 {
-  "name": "web-ext-types",
-  "author": "Kelsey Zapata <key@kelseasy.org> (https://kelseyz.org)",
-  "version": "3.2.1",
-  "description": "TypeScript type definitions for WebExtensions",
+  "name": "chrome-web-ext-types",
+  "author": "Kelsey Zapata <key@kelseasy.org> (https://kelseyz.org), Adam Smith <@burkybang>",
+  "version": "3.3.1",
+  "description": "TypeScript type definitions for Chrome WebExtensions",
   "keywords": [
-    "firefox",
+    "chrome",
     "typescript",
     "webextension"
   ],
-  "repository": "kelseasy/web-ext-types",
+  "repository": "burkybang/chrome-web-ext-types",
   "license": "MPL-2.0",
   "devDependencies": {
     "tslint": "4.5.1",
-    "typescript": "2.3.0"
+    "typescript": "^4.0.0"
   },
   "scripts": {
     "lint": "tslint --project tsconfig.json",
