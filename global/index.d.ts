@@ -270,7 +270,7 @@ declare namespace browser.commands {
   const onCommand: Listener<string>;
 }
 
-declare namespace browser.menus {
+declare namespace browser.contextMenus {
   type ContextType =
     | 'll'
     | 'audio'
